@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- META TAG OG -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="CupCake, o melhor de Manaus"/>
+    <meta property="og:image" content="https://cupcakess.vercel.app/assets/cup1.png"/>
+    <meta property="og:description" content="Receita americana em Manaus"/>
+    <meta property="og:site_name" content="CupCake"/>
+
+    <link rel="stylesheet" href="./styles/output.css" />
+
+    <title>CupPie - O Cupcake de Torta !</title>
+  </head>
+  <body oncontextmenu="return false">
+    <!-- HEADER -->
+    <header class="w-full h-[420px] bg-zinc-900 bg-cover bg-center bg-home">
+      <div class="w-full h-full flex flex-col justify-center items-center">
+        <img
+          src="./assets/cup1.png"
+          alt="Logo CupPie"
+          oncontextmenu="return false"
+          class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+        />
+          <h1 class="text-3xl mt-2 mb-4 font-bold text-pink-500 borda_titulo ">
+            CupPie: Seu cupcake de torta
+          </h1>
+            <span class="text-pink-700  hover:scale-110 duration-200 borda_endereco font-bold">Escolha e Peça Já através do nosso Delivery !</span>
+          <div id="date-span" class="bg-red-500 px-4 py-1 rounded-lg mt-5">
+            <span class="text-white">Aberto: Seg à Dom - 18:00 às 22:00</span>
+          </div>
+      </div>
+    </header>
+    <!-- FIM DO HEADER -->
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+      Conheça nosso Menu:
+    </h2>
+
+    <div class="mx-auto max-w-7x1 px2 my-2">
+          <h2 class="font-bold text-3x1 mb-4">
+           CupPies:
+          </h2>
+         </div>
+
+    <!-- INÍCIO MENU -->
+    <div id="menu">
+
+      <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-14 mx-auto max-w-7xl mb-16">
+
+        <!-- PRODUTO ITEM -->
+        <div class="flex gap-2">
+          <img src="./assets/cup2.png" alt="O mais pedido" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+          <div>
+            <p class="font-bold">CupPie de Chocolate</p>
+            <p class="text-sm">Sabor chocolate</p>
+
+            <div class="flex items-center gap-2       justify-between mt-3">
+              <p class="font-bold text-lg">R$ 9,00</p>
+              <button class="bg-gray-900 px-5 rounded  add-to-cart-btn" data-name="CupPie Chocolate" data-price="9">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+          
+        </div>
+        <!-- FIM PRODUTO ITEM -->
+
+        <!-- PRODUTO ITEM 2 -->
+        <div class="flex gap-2">
+          <img src="./assets/cup3nesquik.png" alt="O mais pedido" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+          <div>
+            <p class="font-bold">CupPie de Morango</p>
+            <p class="text-sm">Sabor Morango</p>
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 13,00</p>
+                <button class=" bg-gray-900 px-5 rounded  add-to-cart-btn" data-name="CupPie Morango"
+                  data-price="13">
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+          </div>
+        </div>
+        <!-- FIM PRODUTO ITEM 2 -->
+        
+        <!-- PRODUTO ITEM 3 -->
+        <div class="flex gap-2">
+          <img src="./assets/cup4baunilha.png" alt="O mais pedido" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+          <div>
+            <p class="font-bold">CupPie de Baunilha</p>
+            <p class="text-sm">Sabor Baunilha</p>
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 7,00</p>
+                <button class=" bg-gray-900 px-5 rounded  add-to-cart-btn" data-name="CupPie Baunilha"
+                  data-price="7">
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+          </div>
+        </div>
+        <!-- FIM PRODUTO ITEM 3 -->
+
+         <!-- PRODUTO ITEM 4 -->
+         <div class="flex gap-2">
+          <img src="./assets/cup5coco.png" alt="O mais pedido" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+          <div>
+            <p class="font-bold">CupPie de Côco</p>
+            <p class="text-sm">Sabor Côco</p>
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 7,00</p>
+                <button class=" bg-gray-900 px-5 rounded  add-to-cart-btn" data-name="CupPie Coco"
+                  data-price="7">
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+          </div>
+        </div>
+        <!-- FIM PRODUTO ITEM 4 -->
+      </main>
+
+      <!-- GRID BEBIDAS -->
+       <div class="mx-auto max-w-7x1 px2 my-2">
+        <h2 class="font-bold text-3x1">
+         Bebidas: 
+        </h2>
+       </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-14 mx-auto max-w-7xl mb-16">
+
+        <!-- BEBIDA 1 -->
+        <div class="flex gap-2">
+          <img src="./assets/refri1.png" alt="O mais pedido" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+          <div>
+            <p class="font-bold">Coca-Cola</p>
+            <p class="text-sm">Em Lata 350mL</p>
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 5,00</p>
+                <button class=" bg-gray-900 px-5 rounded  add-to-cart-btn" data-name="Coca Lata"
+                  data-price="5">
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+          </div>
+        </div>
+        <!-- FIM BEBIDA 1 -->
+
+        <!-- BEBIDA 2 -->
+        <div class="flex gap-2">
+          <img src="./assets/refri2.png" alt="O mais pedido" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+          <div>
+            <p class="font-bold">Guaraná Antártica</p>
+            <p class="text-sm">Em Lata 350mL</p>
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 5,00</p>
+                <button class=" bg-gray-900 px-5 rounded  add-to-cart-btn" data-name="Guarana Lata"
+                  data-price="5">
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+          </div>
+        </div>
+        <!-- FIM BEBIDA 2 -->
+
+        <!-- BEBIDA 3 -->
+        <div class="flex gap-2">
+          <img src="./assets/suco1.png" alt="O mais pedido" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+          <div>
+            <p class="font-bold">Suco de Maracujá</p>
+            <p class="text-sm">Em copo 380mL</p>
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 7,00</p>
+                <button class=" bg-gray-900 px-5 rounded  add-to-cart-btn" data-name="Suco Maracuja"
+                  data-price="7">
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+          </div>
+        </div>
+        <!-- FIM BEBIDA 3 -->
+      </div>
+      <!-- FIM GRID BEBIDAS -->
+    </div>
+    <!-- FIM MENU -->
+
+    <!-- MODAL CART -->
+     <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+          <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
+
+          <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+          
+          <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+          <p class="font-bold">Endereço de entrega:</p>
+          <input type="text" placeholder="Digite seu endereço completo" id="address"
+          class="w-full border-2 p-1 rounded my-1">
+
+          <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
+
+          <div class="flex items-center justify-between mt-5 w-full">
+
+            <button id="close-modal-btn">Fechar</button>
+            <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+
+          </div>
+
+        </div>
+
+      </div>
+     </div>
+
+    <!-- CARRINHO DE COMPRAS -->
+    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+
+      <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+        (<span id="cart-count">0</span>) Veja meu carrinho <i class="fa fa-cart-plus text-lg text-white"></i>
+      </button>
+
+    </footer>
+
+    <!-- LÓGICA SCRIPT -->
+    <script>
+      window.oncontextmenu = function() {
+         return false;
+      }
+      document.onkeydown = function(e) {
+          if (window.event.keyCode == 123 || e.button==2)
+          return false;
+      }
+      </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
+
+
